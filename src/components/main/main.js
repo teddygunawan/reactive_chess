@@ -1,6 +1,5 @@
 import React from 'react';
 import Game from '../game/game.js';
-
 /* Controls the game state */
 class Main extends React.Component {
     constructor(props) {

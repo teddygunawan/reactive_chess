@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Player from '../player/player.js';
 class Game extends React.Component {
     constructor(props) {
         super(props);
@@ -11,12 +11,23 @@ class Game extends React.Component {
                 col: '',
                 step: 0
             }],
+            history: [],
             gameState: "home"
         };
+
     }
     render() {
+        switch (this.state.gameState) {
+            case 'login':
+                break
+            default:
+
+        }
         return (
-            <div>hello!</div>
+            <div className="game-container">
+                <div><Player name="Ted" /></div>
+                <div><Player name="Di" /></div>
+            </div>
         )
     };
 }
